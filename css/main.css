@@ -3,23 +3,23 @@ body {
     background-image: url("../img/bg.jpg");
     background-position: center;
     background-size: cover;
-    margin: 5px;
+    margin: 2px;
 }
 
 /* Style Nav*/
 .navbar-nav{
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .mainlogo{
     height: 75px;
 }
 
-/* Style Header/Temas*/
+/* Style Temas*/
 .temas {
     padding: 5px;
-    margin: 0px;
+    margin: 5px 0px;
     list-style-type: none;
     background-image: url("../img/bgEsc.png");
     background-size: 75px;
@@ -42,7 +42,7 @@ body {
     width: 135px;
 }
 
-/* Style main */
+/* Style Main */
 .mainindex{
     text-align: center;
     margin: 5px;
@@ -79,4 +79,58 @@ footer ul {
 #contacto ul li a img{
     height: 100px;
     width: 100px;
+}
+
+/* Style Secciones*/
+.contenedor{
+    margin: 5px 0px;
+    border-style: dashed;
+    font-size: large;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor div{
+    padding: 5px;
+}
+
+.info{
+    width: 550px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.info img {
+    height: 100%;
+    width: 100%;
+}
+
+.circuitos  div {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:center;
+}
+
+.tabla-circuitos {
+    border:1px sólido #C0C0C0;
+    border-collapse:colapso;
+    padding:5px;
+}
+.tabla-circuitos thead {
+    border:1px sólido #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+}
+.tabla-circuitos td {
+    border:1px sólido #C0C0C0;
+    padding:5px;
 }
