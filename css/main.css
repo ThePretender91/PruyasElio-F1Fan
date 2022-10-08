@@ -6,42 +6,30 @@ body {
     margin: 5px;
 }
 
-/* Style Menu */
-nav {
-    background-image: url("../img/F1Drivers.jpg");
-    background-size: cover;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* Style Nav*/
+.navbar-nav{
     align-items: center;
+    font-size: 2rem;
 }
 
-nav ul {
-    background-color: #ffffff;
-    list-style-type: none;
-    padding: 0px;
+.mainlogo{
+    height: 75px;
 }
 
-nav ul li {
-    font-size: 20px;
-    display: inline-block;
-    padding: 10px;
-    margin: 0 5px;
-}
-
-/* Style Temas*/
+/* Style Header/Temas*/
 .temas {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     list-style-type: none;
     background-image: url("../img/bgEsc.png");
-    background-size: 150px;
+    background-size: 75px;
     border-style: dashed;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    justify-items: center;    
 }
 
 .temas li {
@@ -49,32 +37,29 @@ nav ul li {
     border-color: #000000;
 }
 
-/* Style Header */
-.headerindex {
-    padding: 10px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.temas li a img{
+    height: 135px;
+    width: 135px;
 }
 
-.headerindex div {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
+/* Style main */
+.mainindex{
+    text-align: center;
+    margin: 5px;
+}
+
+.mainindex img{
+    height: 350px;
 }
 
 /* Style Footer */
 footer {
     background-image: url(../img/bgEsc.png);
-    background-size: 500px;
+    background-size: 75px;
 
     padding: 5px;
-    display: flex;
-
-    justify-content: space-between;
+    text-align: center;
+    font-size: large;
 }
 
 footer ul {
@@ -83,59 +68,15 @@ footer ul {
     list-style-type: none;
 }
 
-#contacto {
-    padding: 5px;
+#contacto ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-items: center;   
 }
 
-#contacto ul li{
-    padding: 5px;
-    display: inline-block;
-}
-
-/* Style Secciones*/
-.contenedor{
-    margin: 10px;
-    border-style: dashed;
-    font-size: large;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.contenedor div{
-    padding: 5px;
-}
-
-.info{
-    width: 550px;
-    display: flex;
-
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
-
-.circuitos  div {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    
-    justify-content:center;
-}
-
-.tabla-circuitos {
-    border:1px sólido #C0C0C0;
-    border-collapse:colapso;
-    padding:5px;
-}
-.tabla-circuitos thead {
-    border:1px sólido #C0C0C0;
-    padding:5px;
-    background:#F0F0F0;
-}
-.tabla-circuitos td {
-    border:1px sólido #C0C0C0;
-    padding:5px;
+#contacto ul li a img{
+    height: 100px;
+    width: 100px;
 }
