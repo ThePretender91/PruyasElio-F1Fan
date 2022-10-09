@@ -106,6 +106,7 @@ footer ul{
 .info{
     width: 550px;
     display: flex;
+    
 
     flex-direction: column;
     justify-content: center;
@@ -154,6 +155,10 @@ a{
 
 /* Media queries */
 @media screen and (min-width:768px){
+    /* Style Nav */
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
     /* Style Temas*/
     .temas{
         background-size: 150px;
@@ -167,7 +172,7 @@ a{
     .mainindex{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     
     .mainindex img{
@@ -209,10 +214,64 @@ a{
     }
 }
 
+@media screen and (min-width:1024px){
+    /* Style Main */
+    .mainlogo{
+    height: 100px;
+    }
+
+    .temas li a img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .mainindex img{
+        margin: 5px;
+        height: 450px;
+    }
+
+    .mainindex div{
+        margin: 5px;
+    }
+
+    .mainindex img{
+        height: 100%;
+    }
+
+    iframe{
+        height: 432px;
+        width: 768px;
+    }
+
+    /* Style Footer */
+    footer {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        
+        text-align: left;
+    }
+
+    #contacto{
+        align-items: center;
+    }
+
+    #contacto ul li{
+        padding: 5px;
+        display: inline-block;
+    }
+    .carousel{
+    max-width: 900px;
+    max-height: 600px;
+    }
+
+    .col-sm-6 img{
+        width: 200px;
+    }
+}
 
 
-
-/* Animacion (Importada desde animate.style) */
+/* Animacion (Importadas desde animate.style) */
 @-webkit-keyframes pulse {
     from {
       -webkit-transform: scale3d(1, 1, 1);
