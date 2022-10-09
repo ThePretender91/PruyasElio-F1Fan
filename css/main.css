@@ -37,6 +37,11 @@ body {
     border-color: #000000;
 }
 
+.temas li:hover {
+    animation: pulse;
+    animation-duration: 1s;
+  }
+
 .temas li a img{
     height: 135px;
     width: 135px;
@@ -120,17 +125,99 @@ footer ul {
     justify-content:center;
 }
 
-.tabla-circuitos {
-    border:1px sólido #C0C0C0;
-    border-collapse:colapso;
-    padding:5px;
+.col-sm-6 img{
+    width: 150px;
 }
-.tabla-circuitos thead {
-    border:1px sólido #C0C0C0;
-    padding:5px;
-    background:#F0F0F0;
-}
-.tabla-circuitos td {
-    border:1px sólido #C0C0C0;
-    padding:5px;
-}
+
+.col-sm-6 img:hover {
+    animation: heartBeat;
+    animation-duration: 1s;
+  }
+
+/* Animacion (Importada desde animate.style) */
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-webkit-keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    14% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    42% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    14% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    42% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
