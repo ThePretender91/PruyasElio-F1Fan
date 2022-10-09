@@ -153,6 +153,18 @@ a{
     animation-timing-function: ease-in-out; 
 }
 
+.anim-inicio-l{
+    animation-name: entrada-lat-l;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in;   
+}
+
+.anim-inicio-r{
+    animation-name: entrada-lat-r;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in; 
+}
+
 /* Media queries */
 @media screen and (min-width:768px){
     /* Style Nav */
@@ -270,8 +282,80 @@ a{
     }
 }
 
+/* Animaciones - Solamente aplicadas a pagina mercedes.html */
+@keyframes entrada-lat-l{
+    0%{
+        transform: translateX(-1000px);
+    }
+    10%{
+        transform: translateX(-900px);
+    }
+    20%{
+        transform: translateX(-800px);
+    }
+    30%{
+        transform: translateX(-700px);
+    }
+    40%{
+        transform: translateX(-600px);
+    }
+    50%{
+        transform: translateX(-500px);
+    }
+    60%{
+        transform: translateX(-400px);
+    }
+    70%{
+        transform: translateX(-300px);
+    }
+    80%{
+        transform: translateX(-200px);
+    }
+    90%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(-0px);
+    }
+}
 
-/* Animacion (Importadas desde animate.style) */
+@keyframes entrada-lat-r{
+    0%{
+        transform: translateX(1000px);
+    }
+    10%{
+        transform: translateX(900px);
+    }
+    20%{
+        transform: translateX(800px);
+    }
+    30%{
+        transform: translateX(700px);
+    }
+    40%{
+        transform: translateX(600px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    60%{
+        transform: translateX(400px);
+    }
+    70%{
+        transform: translateX(300px);
+    }
+    80%{
+        transform: translateX(200px);
+    }
+    90%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* Animaciones2 (Importadas desde animate.style) */
 @-webkit-keyframes pulse {
     from {
       -webkit-transform: scale3d(1, 1, 1);
