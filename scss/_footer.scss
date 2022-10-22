@@ -1,0 +1,38 @@
+/* Style Footer */
+footer{
+    background-image: url($fondosecundario);
+    background-size: $fondosectam;
+
+    padding: $paddingbase;
+    text-align: center;
+    font-size: large;
+    
+    ul{
+        padding: $paddingbase;
+        margin: 0px;
+        list-style-type: none;
+    }
+}
+
+#contacto ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: $gapbase*2;
+    grid-column-gap: $gapbase*2;
+    justify-items: center;
+    
+    li{
+        a{
+            img{
+                height: $socialstam;
+                width: $socialstam;
+            }
+
+            img:hover{
+                animation: shakeX;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out; 
+            }
+        }
+    }
+}

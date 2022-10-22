@@ -1,0 +1,14 @@
+/* Style Main */
+.mainindex{
+    text-align: center;
+    margin: $marginbase;
+    
+    img {
+        height: 350px;
+    }
+
+    iframe{
+        height: $videotamH;
+        width: $videotamW;
+    }
+}

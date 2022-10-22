@@ -1,0 +1,112 @@
+/* Media queries */
+@media screen and (min-width:768px){
+    /* Style Nav */
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    /* Style Temas*/
+    .temas{
+        background-size: $fondosectam*2;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* Style Main */
+    .mainindex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        img{
+            height: 350px;
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe{
+            height: $videotamH*1.5;
+            width: $videotamW*1.5;
+        }
+    }
+
+    /* Style Footer */
+    footer{
+        background-size: $fondosectam*2;
+    }
+
+    #contacto {
+        padding: $paddingbase;
+        
+        ul{
+            padding: $paddingbase;
+            display: flex;
+
+            justify-content: space-evenly;
+
+            li a img{
+                height: $socialstam*0.75;
+                width: $socialstam*0.75;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* Style Main */
+    .mainlogo{
+    height: $logotam*1.5;
+    }
+
+    .temas li a img{
+        height: $temastam*1.25;
+        width: $temastam*1.25;
+    }
+
+    .mainindex{
+        img{
+            margin: $marginbase;
+            height: 450px;
+        }
+        
+        div{
+            margin: $marginbase;
+        }
+        
+        iframe{
+            height: $videotamH*2; //432px
+            width: $videotamW*2; //768px
+        }
+    }
+
+    /* Style Footer */
+    footer {
+        padding: $paddingbase;
+        display: flex;
+        justify-content: space-between;
+        
+        text-align: left;
+    }
+
+    #contacto{
+        align-items: center;
+        
+        ul li{
+            padding: $paddingbase;
+            display: inline-block;
+        }
+    }
+    .carousel{
+    max-width: 900px;
+    max-height: 600px;
+    }
+
+    .col-sm-6 img{
+        width: 200px;
+    }
+}

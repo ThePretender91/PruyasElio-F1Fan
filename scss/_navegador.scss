@@ -1,0 +1,40 @@
+/* Style Nav */
+.navbar-nav{
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.mainlogo{
+    height: $logotam;
+}
+
+/* Style Temas */
+.temas{
+    padding: $paddingbase;
+    margin: $marginbase 0px;
+    list-style-type: none;
+    background-image: url($fondosecundario) ;
+    background-size: $fondosectam;
+    border: dashed $genborder;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: $gapbase;
+    grid-column-gap: $gapbase;
+    justify-items: center;
+    
+    li{
+        border: solid $genborder;
+        a {
+            img{
+                height: $temastam;
+                width: $temastam;
+            }
+        }
+    }
+    
+    li:hover{
+        animation: pulse;
+        animation-duration: 1s;
+    }
+}

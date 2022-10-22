@@ -1,0 +1,70 @@
+/* Style Secciones*/
+.contenedor{
+    margin: $marginbase 0px;
+    border: dashed $genborder;
+    font-size: large;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    div {
+        padding: $paddingbase;
+    }
+}
+
+.info{
+    width: 550px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circuitos  div{
+    padding: $paddingbase;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content:center;
+}
+
+.col-sm-6 img{
+    width: 150px;
+}
+
+.col-sm-6:hover{
+    animation: heartBeat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #000000;    
+}
+
+.card-img-top:hover{
+        outline: none;
+        text-decoration: none;
+        color: #000000;
+
+        animation: headShake;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out; 
+    }
+
+.anim-inicio-l{
+    animation-name: entrada-lat-l;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in;   
+}
+
+.anim-inicio-r{
+    animation-name: entrada-lat-r;
+    animation-duration: 1s; 
+    animation-timing-function: ease-in; 
+}
