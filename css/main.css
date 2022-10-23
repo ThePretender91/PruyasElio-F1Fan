@@ -38,6 +38,9 @@ body {
 .mainindex {
   text-align: center;
   margin: 5px; }
+  .mainindex p {
+    font-size: large;
+    font-weight: bold; }
   .mainindex img {
     height: 350px; }
   .mainindex iframe {

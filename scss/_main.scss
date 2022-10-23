@@ -2,6 +2,11 @@
 .mainindex{
     text-align: center;
     margin: $marginbase;
+
+    p{
+        font-size: large;
+        font-weight: bold;
+    }
     
     img {
         height: 350px;
