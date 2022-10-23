@@ -23,19 +23,23 @@
     justify-content: center;
 }
 
-.circuitos div{
-    padding: $paddingbase;
-    display: flex;
-    flex-direction: row;
-    
-    justify-content:center;
-}
+.circuitos{
+    div{
+        padding: $paddingbase;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content:center;
+    }
+} 
 
-.col-sm-6 img{
-    width: 150px;
-    
-    &:hover{
-        @include agregaranimacion (heartBeat,1s,ease-in-out);
+.col-sm-6{
+    img{
+        width: 150px;
+
+        &:hover{
+            @include agregaranimacion (heartBeat,1s,ease-in-out);
+        }
     }
 }
 

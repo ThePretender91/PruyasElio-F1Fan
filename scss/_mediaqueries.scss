@@ -49,10 +49,14 @@
 
             justify-content: space-evenly;
 
-            li a img{
-                height: $socialstam*0.75;
-                width: $socialstam*0.75;
-            }
+            li{
+                a{
+                    img{
+                        height: $socialstam*0.75;
+                        width: $socialstam*0.75;
+                    }
+                } 
+            } 
         }
     }
 }
@@ -63,10 +67,16 @@
     height: $logotam*1.5;
     }
 
-    .temas li a img{
-        height: $temastam*1.25;
-        width: $temastam*1.25;
-    }
+    .temas{
+        li{
+            a{
+                img{
+                    height: $temastam*1.25;
+                    width: $temastam*1.25;
+                }
+            }
+        } 
+    } 
 
     .mainindex{
         img{
@@ -96,9 +106,11 @@
     #contacto{
         align-items: center;
         
-        ul li{
-            padding: $paddingbase;
-            display: inline-block;
+        ul{
+            li{
+                padding: $paddingbase;
+                display: inline-block;
+            }
         }
     }
     .carousel{
@@ -106,8 +118,10 @@
     max-height: 600px;
     }
 
-    .col-sm-6 img{
-        width: 200px;
+    .col-sm-6{
+        img{
+            width: 200px;
+        }
     }
 }
 
