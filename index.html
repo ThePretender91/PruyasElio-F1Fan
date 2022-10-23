@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/f1icon.png" type="image/x-icon">
+    <link rel="icon" href="img/f1icon.png">
 
     <!-- Keywords -->
     <meta name="keywords" content="f1, formula1, informacion, noticias, newletter">
@@ -19,6 +19,7 @@
       
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/main.css">
+
     <!-- Titulo Pagina -->
     <title>Home - F1 Info</title>
 </head>
@@ -35,6 +36,15 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Secciones</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/redbull.html"><img class= "bg-light" style="--bs-bg-opacity: .7;" src="img/redbulllogosf.png" alt="RedBullLogo" height="32px" width="32px"> Red Bull</a></li>
+                            <li><a class="dropdown-item" href="pages/ferrari.html"><img class= "bg-light" style="--bs-bg-opacity: .7;" src="img/ferrarilogosf.png" alt="RedBullLogo" height="32px" width="32px"> Ferrari</a></li>
+                            <li><a class="dropdown-item" href="pages/mercedes.html"><img class= "bg-light" style="--bs-bg-opacity: .7;" src="img/mercedeslogosf.png" alt="RedBullLogo" height="32px" width="32px"> Mercedes</a></li>
+                            <li><a class="dropdown-item" href="pages/circuitos.html"><img class= "bg-light" style="--bs-bg-opacity: .7;" src="img/circuitosf.png" alt="RedBullLogo" height="32px" width="32px"> Circuitos 2022</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#suscribirse">Suscribirse</a>
                     </li>
@@ -45,6 +55,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Selector Temas -->
     <ul class="temas">
         <li>
@@ -74,7 +85,7 @@
     </main>
 
     <!-- Inicio Footer -->
-    <footer class= "bg-light" style="--bs-bg-opacity: 1;">
+    <footer class= "text-bg-secondary" style="--bs-bg-opacity: 0.8;">
         <div>
             <ul>
                 <li>
@@ -94,7 +105,7 @@
                         </div>
                         <div>
                             <input class="btn btn-primary" type="submit" value="Enviar">
-                            <input class="btn btn-outline-danger" type="reset" value="Limpiar">
+                            <input class="btn btn-danger" type="reset" value="Limpiar">
                         </div>
                     </form>
                 </li>

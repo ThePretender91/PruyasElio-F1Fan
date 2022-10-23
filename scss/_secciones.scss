@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.circuitos  div{
+.circuitos div{
     padding: $paddingbase;
     display: flex;
     flex-direction: row;
@@ -33,12 +33,10 @@
 
 .col-sm-6 img{
     width: 150px;
-}
-
-.col-sm-6:hover{
-    animation: heartBeat;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    
+    &:hover{
+        @include agregaranimacion (heartBeat,1s,ease-in-out);
+    }
 }
 
 a{
@@ -48,23 +46,15 @@ a{
 }
 
 .card-img-top:hover{
-        outline: none;
-        text-decoration: none;
-        color: #000000;
+    @extend a;
 
-        animation: headShake;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out; 
-    }
+    @include agregaranimacion (headShake,1s,ease-in-out);
+}
 
 .anim-inicio-l{
-    animation-name: entrada-lat-l;
-    animation-duration: 1s; 
-    animation-timing-function: ease-in;   
+    @include agregaranimacion (entrada-lat-l,1s,ease-in);
 }
 
 .anim-inicio-r{
-    animation-name: entrada-lat-r;
-    animation-duration: 1s; 
-    animation-timing-function: ease-in; 
+    @include agregaranimacion (entrada-lat-r,1s,ease-in);
 }

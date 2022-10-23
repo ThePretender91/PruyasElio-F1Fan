@@ -27,12 +27,12 @@ body {
   justify-items: center; }
   .temas li {
     border: solid 3px #000000; }
-    .temas li a img {
+    .temas li a img, .temas li .card-img-top:hover img {
       height: 125px;
       width: 125px; }
-  .temas li:hover {
-    animation: pulse;
-    animation-duration: 1s; }
+    .temas li:hover {
+      animation: pulse;
+      animation-duration: 1s; }
 
 /* Style Main */
 .mainindex {
@@ -46,9 +46,7 @@ body {
 
 /* Style Footer */
 footer {
-  background-image: url("../img/bgEsc.png");
-  background-size: 75px;
-  padding: 5px;
+  border: dashed 3px #000000;
   text-align: center;
   font-size: large; }
   footer ul {
@@ -62,13 +60,13 @@ footer {
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   justify-items: center; }
-  #contacto ul li a img {
+  #contacto ul li a img, #contacto ul li .card-img-top:hover img {
     height: 100px;
     width: 100px; }
-  #contacto ul li a img:hover {
-    animation: shakeX;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out; }
+    #contacto ul li a img:hover, #contacto ul li .card-img-top:hover img:hover {
+      animation: shakeX;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out; }
 
 /* Style Secciones*/
 .contenedor {
@@ -97,32 +95,28 @@ footer {
 
 .col-sm-6 img {
   width: 150px; }
+  .col-sm-6 img:hover {
+    animation: heartBeat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
 
-.col-sm-6:hover {
-  animation: heartBeat;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out; }
-
-a {
+a, .card-img-top:hover {
   outline: none;
   text-decoration: none;
   color: #000000; }
 
 .card-img-top:hover {
-  outline: none;
-  text-decoration: none;
-  color: #000000;
   animation: headShake;
   animation-duration: 1s;
   animation-timing-function: ease-in-out; }
 
 .anim-inicio-l {
-  animation-name: entrada-lat-l;
+  animation: entrada-lat-l;
   animation-duration: 1s;
   animation-timing-function: ease-in; }
 
 .anim-inicio-r {
-  animation-name: entrada-lat-r;
+  animation: entrada-lat-r;
   animation-duration: 1s;
   animation-timing-function: ease-in; }
 
@@ -161,7 +155,7 @@ a {
       padding: 5px;
       display: flex;
       justify-content: space-evenly; }
-      #contacto ul li a img {
+      #contacto ul li a img, #contacto ul li .card-img-top:hover img {
         height: 75px;
         width: 75px; } }
 
@@ -169,7 +163,7 @@ a {
   /* Style Main */
   .mainlogo {
     height: 112.5px; }
-  .temas li a img {
+  .temas li a img, .temas li .card-img-top:hover img {
     height: 156.25px;
     width: 156.25px; }
   .mainindex img {
@@ -196,6 +190,14 @@ a {
     max-height: 600px; }
   .col-sm-6 img {
     width: 200px; } }
+
+@media screen and (min-width: 1400px) {
+  .mainindex img {
+    margin: 5px;
+    height: 600px; }
+  .mainindex iframe {
+    height: 375px;
+    width: 750px; } }
 
 /* Animaciones - Solamente aplicadas a pagina mercedes.html */
 @keyframes entrada-lat-l {

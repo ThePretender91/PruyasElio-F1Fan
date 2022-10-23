@@ -110,3 +110,17 @@
         width: 200px;
     }
 }
+
+@media screen and (min-width:1400px){
+    .mainindex{
+        img{
+            margin: $marginbase;
+            height: 600px;
+        }
+        
+        iframe{
+            height: $videotamH*2.5;
+            width: $videotamW*2.5;
+        }
+    }
+}

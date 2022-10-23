@@ -18,5 +18,11 @@ $socialstam: 100px;
 $videotamH: 150px;
 $videotamW: 300px;
 
-//Otros
+//Mixin y otros
 $genborder: 3px $bordecolor;
+
+@mixin agregaranimacion ($anitipo,$animdur,$animtimfun){
+    animation: $anitipo;
+    animation-duration: $animdur;
+    animation-timing-function: $animtimfun;
+}

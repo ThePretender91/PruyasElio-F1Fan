@@ -25,16 +25,14 @@
     
     li{
         border: solid $genborder;
-        a {
-            img{
+        a img{
                 height: $temastam;
                 width: $temastam;
             }
+
+        &:hover{
+            animation: pulse;
+            animation-duration: 1s;
         }
-    }
-    
-    li:hover{
-        animation: pulse;
-        animation-duration: 1s;
     }
 }
